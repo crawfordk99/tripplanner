@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Shadows+Into+Light&display=swap');
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    color: #301A4B;
+    font-family: "Quicksand", 'Times New Roman', Times;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #301A4B;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    grid-row: 2/3;
+}
+
+nav a {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+header .logo {
+    margin: 0 auto;
+}
+
+header nav a:hover {
+    background-color: #857f74;
+    color: #313628;
+    text-decoration: underline;
+}
+
+h1, h2, h4 {
+    font-family: "Shadows Into Light";
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.hero-msg {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.hero-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 0;
+    width: 100%;
+    height: 600px
+}
+
+#home-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#home-main h1, #your-part-main h1, #our-part-main h1 {
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+
+#home-main p {
+    grid-row: 2/3;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.main-bottom {
+    grid-row: 3/4;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ready {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+
+.book {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 auto;
+}
+
+.need-link, .example-1, example {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 0 auto;
+}
+
+.who-img, .example-img-1, .example-img {
+    grid-column: 1/2;
+    grid-row: 4/5; 
+    margin: 0 auto;
+    padding: 25px;
+    width: 250px
+}
+
+.we-do-link, .example-2, .want {
+    grid-column: 3/4;
+    grid-row:3/4;
+    margin: 0 auto;
+}
+
+.people-river-img, .example-img-2, .want-img {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin: 0 auto;
+    padding: 25px;
+    width: 250px;
+    height:200px;
+}
+
+footer {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #301A4B;
+}
+
+footer .facebook img, .instagram img, .linkedIn img, .twitter img, .email img {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.footer-links {
+    display:flex;
+    align-items: center;
+}
+
+footer .your-part, footer .our-part, footer .site-plan {
+    padding: 100px;
+    text-decoration: none;
+    color: white;
+}
+
+footer .your-part, footer .our-part {
+    border-right: 2px solid #857f74;
+}
+
+footer .your-part:hover, footer .our-part:hover, footer .site-plan:hover {
+    color:#313628;
+    background-color: #857f74;
+    text-decoration: underline;
+}
+
+.copyright {
+    display:flex;
+    flex-direction: column-reverse;
+    color: #fbfbfb;
+}
+
+footer .logo {
+    padding: 5px;
+}
+
+#your-part-main, #our-part-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#your-part-main h4, #our-part-main h4 {
+    grid-row: 2/3;
+    margin: 0 auto;
+}
+
+#your-part-main p, #our-part-main p {
+    grid-row: 3/4;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.y-main-bottom, .o-main-bottom {
+    grid-row: 4/5;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.head-image img {
+    width: 100%;
+    height: 600px;
+}
+
+.o-main-bottom .example-img {
+    height:200px;
+    width:450px
+}
