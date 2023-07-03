@@ -20,7 +20,8 @@ header {
     justify-content: space-around;
     grid-row: 2/3;
     overflow: hidden;
-    background-color:#301A4B
+    background-color:#301A4B;
+    z-index: 1;
 }
 
 #navbar a {
