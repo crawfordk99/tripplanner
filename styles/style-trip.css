@@ -6,6 +6,7 @@ body {
     background-color: #fbfbfb;
     color: #301A4B;
     font-family: "Quicksand", 'Times New Roman', Times;
+    padding: 10px;
 }
 
 header {
@@ -14,13 +15,15 @@ header {
     background-color: #301A4B;
 }
 
-nav {
+#navbar {
     display: flex;
     justify-content: space-around;
     grid-row: 2/3;
+    overflow: hidden;
+    background-color:#301A4B
 }
 
-nav a {
+#navbar a {
     color: #fbfbfb;
     text-decoration: none;
 }
@@ -199,4 +202,16 @@ footer .logo {
 .o-main-bottom .example-img {
     height:200px;
     width:450px
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + body {
+padding-top: 60px;
 }
